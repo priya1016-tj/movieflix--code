@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>All Users</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: cornsilk; /* Setting background color to yellow */
+        padding: 20px;
+    }
+    h2 {
+        color: #333; /* Dark gray text color */
+    }
+    table {
+        width: 100%; /* Full width of the container */
+        border-collapse: collapse; /* Remove spacing between table cells */
+        margin-top: 20px; /* Space above the table */
+        background-color: #fff; /* White background for the table */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow for the table */
+        border-radius: 5px; /* Rounded corners */
+    }
+    th, td {
+        border: 1px solid #ccc; /* Border for cells */
+        padding: 8px; /* Padding inside cells */
+        text-align: left; /* Align text to the left */
+    }
+    th {
+        background-color: #D68910 ; /* Light gray background for table headers */
+    }
+</style>
+</head>
+<body>
+    <h2>All Users</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Thymeleaf iteration over a list of 'user' objects -->
+            <tr th:each="user : ${user}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.email}"></td>
+                <td th:text="${user.phone}"></td>
+                <td th:text="${user.gender}"></td>
+                <td th:text="${user.address}"></td>
+                <td>
+                    <!-- Delete button -->
+                    <a class="btn btn-danger btn-sm"
+                       th:href="@{/user/delete/{id}(id=${user.id})}"
+                       onclick="return confirm('Are you sure?')">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

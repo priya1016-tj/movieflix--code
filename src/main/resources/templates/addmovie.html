@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Enter Movie Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: cornsilk;
+        padding: 20px;
+        text-align: center;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="submit"],
+    select {
+        width: calc(100% - 20px); /* Adjust for padding */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <form action="addmovie" method="post">
+        <label for="name">Movie Name</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="link">Movie Link</label>
+        <input type="text" id="link" name="link" required>
+        <br><br>
+        
+        <label for="genre">Movie Genre</label>
+        <select id="genre" name="genre" required>
+            <option value="action">Action</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="comedy">Comedy</option>
+        </select>
+        <br><br>
+        
+        <label for="cast">Cast</label>
+        <input type="text" id="cast" name="cast" required>
+        <br><br>
+        
+        <label for="director">Director</label>
+        <input type="text" id="director" name="director" required>
+        <br><br>
+        
+        <input type="submit" value="Add Movie">
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+  body {
+    font-family: Arial, sans-serif; /* Optional: Set a font for the entire page */
+    background-color: coral;/* O ptional: Set a background color */
+    padding: 20px; /* Optional: Add padding to the body */
+  }
+
+  form {
+    max-width: 600px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #fff; /* Form background color */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for the form */
+  }
+
+  label {
+    display: block; /* Display labels as block elements */
+    font-weight: bold; /* Bold font weight for labels */
+    margin-bottom: 8px; /* Bottom margin for labels */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%; /* Full width for text and number inputs */
+    padding: 10px; /* Padding inside text and number inputs */
+    margin-bottom: 15px; /* Bottom margin for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    font-size: 14px; /* Font size for inputs */
+  }
+
+  textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+
+  input[type="submit"] {
+    background-color: #007bff; /* Blue background color for submit button */
+    color: #fff; /* Text color for submit button */
+    padding: 12px 20px; /* Padding inside submit button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for submit button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for submit button */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+  }
+</style>
+</head>
+<body>
+  <form action="updateprofile" method="post">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+    <br><br>
+    
+    <label for="phone">Phone</label>
+    <input type="number" id="phone" name="phone" required>
+    <br><br>
+    
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+    <br><br>
+    
+    <input type="submit" value="Save">
+  </form>
+</body>
+</html>

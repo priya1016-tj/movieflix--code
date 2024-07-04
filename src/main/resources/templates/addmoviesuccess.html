@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+  body {
+    background-image: url('image/home.jpg'); /* Replace 'image/home.jpg' with your image path */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    font-family: Arial, sans-serif; /* Optional: Set a font for the entire page */
+    color: #333; /* Optional: Set a color for text */
+    margin: 0; /* Optional: Remove default margin */
+    padding: 0; /* Optional: Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h2 {
+    text-align: center; /* Centers the heading horizontally */
+    padding: 20px; /* Adds padding around the heading */
+    color: black; /* Sets the text color to white */
+    max-width: 80%; /* Limiting the width of the heading */
+    border-radius: 10px; /* Rounded corners for the heading */
+  }
+
+  form {
+    text-align: center; /* Centers the form horizontally */
+    margin-top: 20px; /* Adds some space between heading and form */
+  }
+
+  input[type="submit"] {
+    background-color: #007bff; /* Blue background color for the submit button */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+  }
+</style>
+</head>
+<body>
+  <div class="center-container">
+    <h2>Movie added successfully. Want to add another movie?</h2>
+    <form action="map-addmovie">
+      <input type="submit" value="Add movies">
+    </form>
+  </div>
+</body>
+</html>

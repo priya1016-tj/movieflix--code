@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome to MovieFlix</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0; /* Light gray background */
+        text-align: center; /* Center align content */
+        padding: 20px;
+        background: url('image/home.jpg') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center; /* Center align content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    h2 {
+        color: #333; /* Dark gray text color */
+    }
+    p {
+   
+        font-style: italic;
+        font-weight: bold;
+        color: black; /* Lighter gray text color */
+        max-width: 600px; /* Limit text width for better readability */
+        margin: 0 auto 20px; /* Center align and add space at the bottom */
+    }
+    a {
+        text-decoration: none; /* Remove underline from links */
+    }
+    input[type="submit"] {
+        background-color: #007bff; /* Blue button background */
+        color: #fff; /* White button text */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease; /* Smooth hover transition */
+        margin: 10px; /* Add margin around buttons */
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+</head>
+<body>
+    <h2>Welcome to MovieFlix</h2>
+    <p>MovieFlix typically represents a platform where users can access a wide range of movies  for a subscription fee, similar to real services like Netflix or Hulu.</p>
+
+    <a href="exploremovies"><input type="submit" value="Explore Movies"></a>
+    <br><br>
+
+    <a href="updateprofile"><input type="submit" value="Update Profile"></a>
+    <br><br>
+
+    <a href="logout"><input type="submit" value="Logout"></a>
+</body>
+</html>

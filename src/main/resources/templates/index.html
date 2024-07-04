@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome to movieflix</title>
+<style>
+    /* CSS styles embedded within the <style> tags */
+    body {
+        font-family: Arial, sans-serif; /* Default font family for the entire body */
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('image/mov.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        display: flex; /* Ensure header is flex container */
+        justify-content: space-between; /* Align items in header to the left and right edges */
+        align-items: center; /* Center items vertically */
+        background-color: brown;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header-left {
+        display: flex; /* Flex layout for left side of header */
+        align-items: center;
+        flex: 1; /* Center items vertically */
+    }
+
+    .header-left h1 {
+        margin: 0; /* Margin between h1 and buttons */
+        font-size: 24px; /* Example font size */
+        font-weight: bold; /* Example font weight */
+        text-transform: uppercase; /* Example text transformation */
+        font-family: BLucida Handwriting; /* Custom font family */
+    }
+
+    .header-right {
+        display: flex; /* Flex layout for right side of header */
+        align-items: center; /* Center items vertically */
+    }
+
+    .header-right a {
+        text-decoration: none; /* Remove underline from anchor tags */
+    }
+
+    .header-right a button {
+        background-color: brown; /* Blue color for buttons */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 10px; /* Space between buttons */
+        font-family: 'Roboto', Arial, sans-serif; /* Custom font family */
+    }
+
+    .header-right a button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Welcome to movieflix Application</h1>
+        </div>
+        <div class="header-right">
+            <a href="map-register"><button type="button">Register</button></a>
+            <a href="map-login"><button type="button">Login</button></a>
+        </div>
+    </header>
+    
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+</body>
+</html>
